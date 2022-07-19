@@ -1,0 +1,302 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family:Helvetica Neue,  Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table {  text-align: center;table-layout:fixed;word-wrap:break-word; }
+html {overflow-y: scroll;} 
+ 
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+.body{
+ font-size: 0.32rem;
+ color: black;
+ font-family:"iconfont", "Microsoft YaHei UI";
+ width: 100%;
+ height: 100%;
+ box-sizing: border-box;
+}
+.content{
+  width: 100vw;
+  height: 100vh;
+  overflow-x:hidden;
+}
+input{
+  color: #6f6f6f;
+}
+input.text{
+  margin-top: 0.15rem;
+  height: 0.6rem;
+  width: 100%;
+  border:none;
+  outline: none;
+}
+input.select{
+  text-align: center;
+  margin-top: 0.15rem;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  height: 0.6rem;
+  width: 95%;
+  outline: none;
+}
+
+input.text::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 0.2rem;
+  color : #c5c5c5;
+
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 0.2rem;
+ color : #c5c5c5;
+
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color : #c5c5c5;
+ font-size: 0.2rem;
+}
+
+input.text:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color : #c5c5c5;
+ font-size: 0.2rem;
+}
+
+input.text::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 0.2rem;
+ color : #c5c5c5;
+
+}
+input.select::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 0.2rem;
+  color : #595959;
+
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 0.2rem;
+  color :#595959;
+ 
+ }
+ 
+ ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 0.2rem;
+  color :#595959;
+ 
+ }
+ 
+ input.select:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 0.2rem;
+  color : #595959;
+ 
+ }
+ 
+ input.select::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 0.2rem;
+  color : #595959;
+ }
+ label.required::before{
+  content: "*";
+  color: red;
+ }
+ .red{
+  color: red;
+ }
+ 
+.title{
+  width:100vw;
+  height: 1.2rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color:#6f97bb;
+  overflow-x:hidden;
+}
+.title p:nth-child(1){
+  font-size: 0.35rem;
+  margin-top: 0.2rem;
+}
+.title p:nth-child(2){
+  font-size: 0.3rem;
+}
+.form{
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+#form>ul>li{
+border-bottom: 1px solid #eee;
+ margin-bottom: 0.2rem;
+ width: 100%;
+ overflow-x: hidden;
+}
+
+#gender option.genderSel{
+background-image: url('../img/select.png');
+background-size: 80px 80px;
+}
+
+.submitBtn{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+  height: 0.6rem;
+  border-radius: 5px;
+  background-color: #6f97bb;
+}
+
+/* 日期组件 */
+a{
+  font-size: 5.3rem;
+}
+.rolldate-confirm{
+  background-color: #6f97bb;
+}
+.rolldate-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rolldate-panel>header{
+  height: 1.4rem;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rolldate-panel>header>.btns{
+  box-sizing: border-box;
+  height: 0.8rem;
+  width: 100vw;
+  display: flex;
+  font-size: 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+  border-bottom:1px solid #cfcfcf;
+  padding:0  0.2rem;
+}
+.rolldate-panel>header>.btns>.rolldate-btn {
+    width: 0.9rem;
+    height:0.52rem ;
+    background-color: #0278fc;
+    text-align: center;
+    line-height: 0.52rem ;
+    border-radius: 2px;
+    border: 1px solid #0278fc;
+}
+.rolldate-panel>header>.btns>.rolldate-btn.rolldate-cancel{
+  background-color: #ffffff;
+  border: 1px solid rgb(227, 227, 227);
+}
+.rolldate-panel>header>.btns>.rolldate-btn.rolldate-confirm{
+ color: #fff;
+}
+.rolldate-panel>header>.dateTitle{
+  background-color: #eeeeee;
+  display: flex;
+  font-size: 0.3rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 0.2rem;
+  color: #adadad;
+}
+.picker .picker-content{
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.3rem;
+}
+.picker .picker-panel .picker-choose{
+  box-sizing: border-box;
+  height: 0.8rem;
+  width: 100vw;
+  display: flex;
+  font-size: 0.2rem;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+  border-bottom:1px solid #cfcfcf;
+  padding:0  0.2rem;
+}
+.picker-choose .cancel-hook{
+    width: 0.9rem;
+    height:0.52rem ;
+    text-align: center;
+    font-size: 0.23rem;
+    line-height: 0.52rem ;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid rgb(227, 227, 227);
+}
+.picker-choose .confirm-hook{
+  width: 0.9rem;
+  height:0.52rem ;
+  font-size: 0.23rem;
+  color: #fff;
+  background-color: #0278fc;
+  text-align: center;
+  line-height: 0.52rem ;
+  border-radius: 2px;
+  border: 1px solid #0278fc;
+}
+
+table{
+  margin: 0.23rem 0;
+  width: 95%;
+}
+table tr th{
+  font-weight:bold;
+}
+
+table td{
+  height: 0.4rem;
+  overflow: hidden;
+}
+table td input{
+  width:100%;
+  height: 100%;
+  background:none;  	
+  outline:none;  	
+  border:none;
+  outline: none;
+}
+
+table tbody tr td{
+  border: 1px solid black;
+}
+table tbody tr:first-child td:first-child{
+  border-top-left-radius: 10px; /* 设置table左上圆角 */
+} 
+table tbody tr:first-child td:last-child{
+  border-top-right-radius: 10px;/* 设置table右上圆角 */
+}
+table tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 10px; /* 设置table左下圆角 */
+}
+table tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;/* 设置table右下圆角 */
+}
+
+table tbody tr td:nth-child(n+2){
+border-left:none; 
+}
+table tbody tr:nth-child(n+2) td{
+  border-top: none;
+}
+
+textarea{
+  margin-top: 0.3rem;
+  border:none;
+	outline: none;
+	resize: none;
+}

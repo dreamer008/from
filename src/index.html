@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../font/iconfont.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>应聘登记表</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="title">
+        <div class="text">
+          <p>杭州方大丝绸有限公司</p>
+          <p>应聘登记表</p>
+        </div>
+      </div>
+      <div class="form">
+        <form id="form">
+          <ul>
+            <li>
+              <label for="job" class="required">应聘岗位</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="job"
+                name="job"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">填表日期</label>
+              <br />
+              <input
+                readonly
+                class="select iconfont"
+                type="text"
+                id="dateSelectorOne"
+                autocomplete="off"
+                placeholder="请选择 &#xe638;"
+              />
+            </li>
+            <li>
+              <label class="required">姓名</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="name"
+                name="name"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">性别</label>
+              <br />
+              <input
+                id="gender"
+                name="gender"
+                type="text"
+                placeholder="请选择 &#xe638;"
+                class="select iconfont"
+                autocomplete="off"
+              />
+            </li>
+            <li>
+              <label class="required">出生日期</label>
+              <br />
+              <input
+                type="text"
+                id="dateBirthday"
+                name="dateBirthday"
+                placeholder="请选择 &#xe638;"
+                class="select iconfont"
+                autocomplete="off"
+              />
+            </li>
+            <li>
+              <label class="required">民族</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="nation"
+                name="nation"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">政治面貌</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="politics"
+                name="politics"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">婚否</label>
+              <br />
+              <input
+                id="marriage"
+                name="marriage"
+                type="text"
+                placeholder="请选择 &#xe638;"
+                class="select iconfont"
+                autocomplete="off"
+              />
+            </li>
+            <li>
+              <label class="required">健康状况</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="health"
+                name="health"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">籍贯</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="place"
+                name="place"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">联系方式</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="telephone"
+                name="telephone"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">电子邮箱</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="email"
+                name="email"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">学历</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="education"
+                name="education"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">现住地</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="home"
+                name="home"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">目前是否在职</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="wroking"
+                name="wroking"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">预计到岗时间</label>
+              <br />
+              <input
+                type="text"
+                id="toWork"
+                name="toWork"
+                placeholder="请选择 &#xe638;"
+                class="select iconfont"
+                autocomplete="off"
+              />
+            </li>
+            <li>
+              <label class="required">期望薪资</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="hopeMoney"
+                name="hopeMoney"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">外语水平</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="englishLevel"
+                name="englishLevel"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">计算机水平</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="computerLevel"
+                name="computerLevel"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">教育经历(请至少完整填写一行)</label>
+              <br />
+              <table cellspacing="0" cellpadding="0" height="100px" id="school">
+                <tr>
+                  <td>时间</td>
+                  <td>毕业院校</td>
+                  <td>专业</td>
+                  <td>详细情况</td>
+                </tr>
+                <tr>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <label class="required"
+                >工作经历(请至少完整填写一行,没有则写<span class="red"
+                  >'无'</span
+                >)</label
+              >
+              <br />
+              <table
+                cellspacing="0"
+                cellpadding="0"
+                height="100px"
+                id="experience"
+              >
+                <tr>
+                  <td>时间</td>
+                  <td>公司名称</td>
+                  <td>职务</td>
+                  <td>职责</td>
+                </tr>
+                <tr>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+              </table>
+            </li>
+            <li>
+              <label>个人荣誉</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="honor"
+                name="honor"
+                class="text"
+              />
+            </li>
+            <li>
+              <label>兴趣特长</label>
+              <br />
+              <input
+                type="text"
+                placeholder="请输入"
+                id="interests"
+                name="interests"
+                class="text"
+              />
+            </li>
+            <li>
+              <label class="required">自我评价</label>
+              <br />
+
+              <textarea
+                rows="10"
+                cols="30"
+                id="appraise"
+                placeholder="请输入"
+              ></textarea>
+            </li>
+            <li>
+              <button type="button" class="submitBtn">提交</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="./utils/flexible.js"></script>
+    <!-- 日期/滚动组件 -->
+    <script src="./utils/rolldate/rolldate.min.js"></script>
+    <script src="./utils/rolldate/index.js"></script>
+    <script src="./utils/picker/picker.min.js"></script>
+    <script src="./utils/picker/index.js"></script>
+  </body>
+</html>
